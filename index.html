@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#08080a">
+  <meta name="description" content="Tarjeta de cumpleaños interactiva para Nicol">
+  <title>¡Feliz Cumpleaños! - Nicol</title>
+
+  <!-- Google Fonts: Cormorant Garamond y Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Luces ambientales de fondo -->
+  <div class="aurora-bg ambient-crimson" aria-hidden="true"></div>
+  <div class="aurora-bg ambient-gold" aria-hidden="true"></div>
+
+  <!-- Canvas con motor de partículas multiforma (Puntos, Estrellas y Corazones) -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <main class="app-container">
+
+    <!-- FASE 1: Sobre Gótico Clásico (Portada) -->
+    <section id="envelopeScreen" class="screen envelope-screen">
+      <div class="envelope-wrapper">
+        <div class="envelope-card">
+          <div class="envelope-flap top-flap" aria-hidden="true"></div>
+          <div class="envelope-fold-line" aria-hidden="true"></div>
+
+          <button id="openBtn" class="wax-seal" aria-label="Abrir carta de cumpleaños">
+            <div class="seal-inner">
+              <span class="seal-icon" aria-hidden="true">⚜</span>
+              <span class="seal-text">Toca para abrir</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FASE 2: Tarjeta Principal Clásica -->
+    <article id="cardScreen" class="screen card-screen hidden" aria-live="polite">
+      
+      <!-- Rosas ornamentales en los bordes -->
+      <div class="roses-container" aria-hidden="true">
+        <span class="rose-node r-tl">🌹</span>
+        <span class="rose-node r-tr">🌹</span>
+        <span class="rose-node r-bl">🌹</span>
+        <span class="rose-node r-br">🌹</span>
+        <span class="rose-node r-tc">🌹</span>
+        <span class="rose-node r-bc">🌹</span>
+      </div>
+
+      <!-- Contenido Interior actualizado para Nicol -->
+      <div class="card-content">
+        <header class="card-header">
+          <h1 class="card-subtitle">¡Feliz cumple, Nicol! 🎉</h1>
+          <h2 class="card-title">Para ti</h2>
+          <div class="gold-divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="card-body">
+          <div class="text-scroll-container">
+            <p id="typedText" class="message-text"></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
