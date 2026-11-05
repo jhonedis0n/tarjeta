@@ -20,7 +20,7 @@
   <div class="aurora-bg ambient-crimson" aria-hidden="true"></div>
   <div class="aurora-bg ambient-gold" aria-hidden="true"></div>
 
-  <!-- Canvas con motor de partículas multiforma (Puntos, Estrellas y Corazones) -->
+  <!-- Canvas con motor de partículas multiforma -->
   <canvas id="particleCanvas" aria-hidden="true"></canvas>
 
   <main class="app-container">
@@ -42,10 +42,13 @@
       </div>
     </section>
 
-    <!-- FASE 2: Tarjeta Principal Clásica -->
+    <!-- FASE 2: Tarjeta Principal con Marco Avanzado y Rosas Asimétricas -->
     <article id="cardScreen" class="screen card-screen hidden" aria-live="polite">
       
-      <!-- Rosas ornamentales en los bordes -->
+      <!-- Marco interior sutil para dar profundidad de grimorio -->
+      <div class="card-inner-frame" aria-hidden="true"></div>
+
+      <!-- Rosas ornamentales con rotaciones asimétricas orgánicas -->
       <div class="roses-container" aria-hidden="true">
         <span class="rose-node r-tl">🌹</span>
         <span class="rose-node r-tr">🌹</span>
@@ -53,12 +56,13 @@
         <span class="rose-node r-br">🌹</span>
         <span class="rose-node r-tc">🌹</span>
         <span class="rose-node r-bc">🌹</span>
+        <span class="rose-node r-ml">🌹</span>
       </div>
 
-      <!-- Contenido Interior actualizado para Nicol -->
+      <!-- Contenido Interior -->
       <div class="card-content">
         <header class="card-header">
-          <h1 class="card-subtitle">¡Feliz cumple, Nicol! 🎉</h1>
+          <h1 class="card-subtitle">¡Feliz cumple, Nicol!</h1>
           <h2 class="card-title">Para ti</h2>
           <div class="gold-divider" aria-hidden="true"></div>
         </header>

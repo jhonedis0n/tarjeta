@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardScreen = document.getElementById('cardScreen');
   const typedTextContainer = document.getElementById('typedText');
 
-  // Contenido de la carta proporcionado para Nicol
   const messageText = "Pasa un día espectacular. Quería decirte que me alegra mucho haberte conocido; la química y las risas contigo no se encuentran tan fácil. Que sea un año lleno de sueños cumplidos y de más momentos juntos. ¡Disfruta mucho tu día!";
 
   const handleOpenCard = (e) => {
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, speed);
   }
 
-  // Inicialización del motor multiforma de partículas con estrellas y corazones
   initMultiShapeParticles();
 });
 
